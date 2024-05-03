@@ -3,6 +3,7 @@ import AppIcon from "../assets/app-icon.svg";
 import { Disclosure } from "@headlessui/react";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { NavLink } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "#", current: true },
@@ -54,9 +55,9 @@ const Nav = () => {
                     />
                   </div>
                 </div>
-                    <button className="ml-2 bg-indigo-600 rounded-lg w-28 font-bold text-white h-8">
-                      Find Stories
-                    </button>
+                <button className="ml-2 bg-indigo-600 rounded-lg w-28 font-bold text-white h-8">
+                  Find Stories
+                </button>
               </div>
               <div className="relative z-10 flex items-center lg:hidden">
                 {/* Mobile menu button */}
@@ -77,9 +78,9 @@ const Nav = () => {
               aria-label="Global"
             >
               {navigation.map((item) => (
-                <a
+                <NavLink
                   key={item.name}
-                  href={item.href}
+                  to={`/${item.name.toLowerCase()}`}
                   className={classNames(
                     item.current
                       ? "bg-gray-300 text-gray-900"
@@ -89,7 +90,7 @@ const Nav = () => {
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
-                </a>
+                </NavLink>
               ))}
             </nav>
           </div>
@@ -97,10 +98,9 @@ const Nav = () => {
           <Disclosure.Panel as="nav" className="lg:hidden" aria-label="Global">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
-                <Disclosure.Button
+                <NavLink
                   key={item.name}
-                  as="a"
-                  href={item.href}
+                  to={`/${item.name.toLowerCase()}`}
                   className={classNames(
                     item.current
                       ? "bg-gray-100 text-gray-900"
@@ -110,7 +110,7 @@ const Nav = () => {
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
-                </Disclosure.Button>
+                </NavLink>
               ))}
             </div>
           </Disclosure.Panel>

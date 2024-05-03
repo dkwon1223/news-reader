@@ -31,8 +31,8 @@ const Home = () => {
 
   return (
     <section className="flex flex-col items-center py-6">
-        <ArticleContainer title="Recent News" articles={recentNewsArticles} height="60"/>
-        <ArticleContainer title="Top Stories" articles={topNewsArticles} height="60"/>
+        <ArticleContainer title="Recent News" articles={recentNewsArticles} height="60vh" />
+        <ArticleContainer title="Top Stories" articles={topNewsArticles} height="60vh" />
     </section>
   );
 };

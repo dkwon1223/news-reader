@@ -1,12 +1,25 @@
 import React from "react";
-import { articles } from "../mockData";
+import { articles, articles2 } from "../mockData";
 import Card from "./Card";
 import ArticleContainer from "./ArticleContainer";
 
 const Home = () => {
   const recentNewsArticles = articles.map((article, index) => {
     return (
+        <Card
+            key={article.title} 
+            id={index}
+            title={article.title}
+            image={article.urlToImage}
+            description={article.description}
+            date={article.publishedAt}
+        />
+    )
+  });
+  const topNewsArticles = articles2.map((article, index) => {
+    return (
         <Card 
+            key={article.title} 
             id={index}
             title={article.title}
             image={article.urlToImage}
@@ -18,8 +31,8 @@ const Home = () => {
 
   return (
     <section className="flex flex-col items-center py-6">
-        <ArticleContainer articles={recentNewsArticles} height="60"/>
-        <ArticleContainer articles={recentNewsArticles} height="60"/>
+        <ArticleContainer title="Recent News" articles={recentNewsArticles} height="60"/>
+        <ArticleContainer title="Top Stories" articles={topNewsArticles} height="60"/>
     </section>
   );
 };

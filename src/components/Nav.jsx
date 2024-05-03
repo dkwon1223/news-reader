@@ -6,15 +6,19 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "Sports", href: "#", current: false },
-  { name: "Business", href: "#", current: false },
-  { name: "Technology", href: "#", current: false },
-  { name: "Health", href: "#", current: false },
+  { name: "Home" },
+  { name: "Sports" },
+  { name: "Business" },
+  { name: "Technology" },
+  { name: "Health" },
 ];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
+}
+
+function toggleCurrent(item) {
+  item.current = !item.current;
 }
 
 const Nav = () => {
@@ -81,10 +85,9 @@ const Nav = () => {
                 <NavLink
                   key={item.name}
                   to={`/${item.name.toLowerCase()}`}
+                  onClick={toggleCurrent(item)}
                   className={classNames(
-                    item.current
-                      ? "bg-gray-300 text-gray-900"
-                      : "text-gray-900 hover:bg-gray-100 hover:text-gray-900",
+                    "text-gray-900 hover:bg-gray-100 hover:text-gray-900",
                     "inline-flex items-center rounded-md py-2 px-3 text-sm font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
@@ -102,9 +105,7 @@ const Nav = () => {
                   key={item.name}
                   to={`/${item.name.toLowerCase()}`}
                   className={classNames(
-                    item.current
-                      ? "bg-gray-100 text-gray-900"
-                      : "text-gray-900 hover:bg-gray-50 hover:text-gray-900",
+                    "text-gray-900 hover:bg-gray-50 hover:text-gray-900",
                     "block rounded-md py-2 px-3 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}

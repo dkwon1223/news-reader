@@ -1,4 +1,4 @@
-export const article = [
+export const articles = [
     {
         "source": {
             "id": "wired",

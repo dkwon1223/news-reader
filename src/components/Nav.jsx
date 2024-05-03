@@ -10,9 +10,9 @@ const Nav = () => {
             <img src={AppIcon} className='w-8'/>
           </div>
           <div id="navLinks" className='flex'>
-            <p>Link 1</p>
-            <p>Link 2</p>
-            <p>Link 3</p>
+            <p className='mx-4'>Link 1</p>
+            <p className='mx-4'>Link 2</p>
+            <p className='mx-4'>Link 3</p>
           </div>
         </nav>
     </header>

@@ -3,13 +3,14 @@ import AppIcon from "../assets/app-icon.svg";
 import { Disclosure } from "@headlessui/react";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { NavLink } from "react-router-dom";
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "Sports", href: "#", current: false },
-  { name: "Business", href: "#", current: false },
-  { name: "Technology", href: "#", current: false },
-  { name: "Health", href: "#", current: false },
+  { name: "Home" },
+  { name: "Sports" },
+  { name: "Business" },
+  { name: "Technology" },
+  { name: "Health" },
 ];
 
 function classNames(...classes) {
@@ -30,7 +31,7 @@ const Nav = () => {
                     src={AppIcon}
                     alt="Your Company"
                   />
-                  <h1 className="font-extrabold text-2xl">NewsReader</h1>
+                  <h1 className="font-extrabold text-sm sm:text-sm lg:text-2xl">NewsReader</h1>
                 </div>
               </div>
               <div className="relative z-0 flex flex-1 items-center justify-center px-2 sm:absolute sm:inset-0">
@@ -54,9 +55,9 @@ const Nav = () => {
                     />
                   </div>
                 </div>
-                    <button className="ml-2 bg-indigo-600 rounded-lg w-28 font-bold text-white h-8">
-                      Find Stories
-                    </button>
+                <button className="ml-2 bg-indigo-600 rounded-lg w-28 font-bold text-white h-8 text-sm">
+                  Find Stories
+                </button>
               </div>
               <div className="relative z-10 flex items-center lg:hidden">
                 {/* Mobile menu button */}
@@ -77,19 +78,17 @@ const Nav = () => {
               aria-label="Global"
             >
               {navigation.map((item) => (
-                <a
+                <NavLink
                   key={item.name}
-                  href={item.href}
+                  to={item.name === "Home" ? "/" :`/${item.name.toLowerCase()}`}
                   className={classNames(
-                    item.current
-                      ? "bg-gray-300 text-gray-900"
-                      : "text-gray-900 hover:bg-gray-100 hover:text-gray-900",
+                    "text-gray-900 hover:bg-gray-100 hover:text-gray-900",
                     "inline-flex items-center rounded-md py-2 px-3 text-sm font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
-                </a>
+                </NavLink>
               ))}
             </nav>
           </div>
@@ -97,20 +96,17 @@ const Nav = () => {
           <Disclosure.Panel as="nav" className="lg:hidden" aria-label="Global">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
-                <Disclosure.Button
+                <NavLink
                   key={item.name}
-                  as="a"
-                  href={item.href}
+                  to={item.name === "Home" ? "/" :`/${item.name.toLowerCase()}`}
                   className={classNames(
-                    item.current
-                      ? "bg-gray-100 text-gray-900"
-                      : "text-gray-900 hover:bg-gray-50 hover:text-gray-900",
+                    "text-gray-900 hover:bg-gray-50 hover:text-gray-900",
                     "block rounded-md py-2 px-3 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
-                </Disclosure.Button>
+                </NavLink>
               ))}
             </div>
           </Disclosure.Panel>

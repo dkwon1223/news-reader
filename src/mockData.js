@@ -559,3 +559,175 @@ export const articles = [
         "content": "By Pete Rizzo, Kraken Editor at Large\r\nPete Rizzo is a leading Bitcoin Historian and author of over 2,000 articles on cryptocurrency. He is also an Editor at Bitcoin Magazine.\r\nThe views and opinions… [+12052 chars]"
     }
 ]
+
+export const articles2 = [
+    {
+        "source": {
+            "id": null,
+            "name": "Gizmodo.com"
+        },
+        "author": "Ed Cara",
+        "title": "You Can't Blame Everything on Covid-19",
+        "description": "Measles has made an unwelcome return to the U.S., with dozens of children across multiple states having caught the highly contagious viral disease so far this year. There are several reasons why measles has become a larger problem both here and worldwide as o…",
+        "url": "https://gizmodo.com/covid19-measles-outbreaks-1851404770",
+        "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/c9b945650935c1ff96bcebb9b1c677a4.jpg",
+        "publishedAt": "2024-04-13T11:30:00Z",
+        "content": "Measles has made an unwelcome return to the U.S., with dozens of children across multiple states having caught the highly contagious viral disease so far this year. There are several reasons why meas… [+6461 chars]"
+    },
+    {
+        "source": {
+            "id": "bbc-news",
+            "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "Covid-19 Inquiry hears evidence in Northern Ireland",
+        "description": "The inquiry is sitting in Belfast for the next three weeks and will hear from politicians and health advisers.",
+        "url": "https://www.bbc.co.uk/news/live/uk-northern-ireland-68889929",
+        "urlToImage": "https://m.files.bbci.co.uk/modules/bbc-morph-news-waf-page-meta/5.3.0/bbc_news_logo.png",
+        "publishedAt": "2024-04-30T07:43:22Z",
+        "content": "Bereaved families are gathering outside the Clayton Hotel in Belfast ahead of the first UK Covid-19 Inquiry sitting in Belfast.\r\nThey are holding photographs of their loved ones and speaking to the m… [+573 chars]"
+    },
+    {
+        "source": {
+            "id": "bbc-news",
+            "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "NHS spring Covid booster jab bookings to open",
+        "description": "People eligible for the free vaccine in England, including everyone aged over 74, can book from Monday.",
+        "url": "https://www.bbc.co.uk/news/health-68789711",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/7A82/production/_133126313_jab.jpg",
+        "publishedAt": "2024-04-11T23:58:41Z",
+        "content": "From Monday, the NHS will take bookings from people in England wanting a free spring Covid booster vaccine. \r\nThose eligible, including everyone aged 75 or older or with a weak immune system, can boo… [+2344 chars]"
+    },
+    {
+        "source": {
+            "id": "bbc-news",
+            "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "People avoid drinking over lack of public toilets",
+        "description": "Since Covid, some say a lack of toilets mean they're staying home or putting their health at risk.",
+        "url": "https://www.bbc.co.uk/news/uk-wales-68836470",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/08E7/production/_133197220_gettyimages-1445207841.jpg",
+        "publishedAt": "2024-04-19T21:47:55Z",
+        "content": "Older people say they are intentionally dehydrating themselves or not leaving the house because of a lack of public toilets.\r\nWales Senior Forum said many toilets had shut or become less accessible s… [+4367 chars]"
+    },
+    {
+        "source": {
+            "id": "bbc-news",
+            "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "Police seize luxury goods in fraud raids across EU",
+        "description": "A criminal network is suspected of embezzling millions from an EU post-Covid recovery scheme.",
+        "url": "https://www.bbc.co.uk/news/world-europe-68742209",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/8FAA/production/_133087763_watches20240404venice2pic-1.jpg",
+        "publishedAt": "2024-04-05T15:50:36Z",
+        "content": "Police across Europe have seized luxury flats, villas, Rolex watches and sports cars in raids on an alleged criminal network. \r\nSome 22 arrests were made on Thursday after officers swooped in in Ital… [+2314 chars]"
+    },
+    {
+        "source": {
+            "id": "business-insider",
+            "name": "Business Insider"
+        },
+        "author": "Chris Panella",
+        "title": "The US Navy's grappling with another Ford-class supercarrier delay that could run into the next decade",
+        "description": "Navy officials blamed USS Enterprise's extended delays on supply chain issues and lingering COVID-19 issues.",
+        "url": "https://www.businessinsider.com/us-navy-grappling-with-another-ford-class-supercarrier-delay-2024-4",
+        "urlToImage": "https://i.insider.com/6615888516bde8d4ead705c8?width=1200&format=jpeg",
+        "publishedAt": "2024-04-09T18:38:02Z",
+        "content": "Gerald R. Ford is the U.S. Navy's newest and most advanced aircraft carrier, representing a generational leap in the U.S. Navy's capacity to project power on a global scale.U.S. Navy photo by Mass Co… [+5091 chars]"
+    },
+    {
+        "source": {
+            "id": "business-insider",
+            "name": "Business Insider"
+        },
+        "author": "Patricia Kime",
+        "title": "Supreme Court rejected military chaplains' lawsuit saying their careers were ruined after refusing the COVID-19 vaccine",
+        "description": "The group of military clergy accused the Defense Department of ruining their careers for refusing the COVID-19 vaccine for religious reasons.",
+        "url": "https://www.businessinsider.com/supreme-court-declines-hearing-military-chaplains-covid-vaccine-case-2024-5",
+        "urlToImage": "https://i.insider.com/6632ab1910dfcda40965aa8d?width=1200&format=jpeg",
+        "publishedAt": "2024-05-01T20:50:52Z",
+        "content": "A Master Sergeant administers COVID-19 vaccine to Army National Guard member at Stratton Air National Guard base in Scotia, New York.US Air National Guard photo by MSgt Christine Wood\r\n<ul><li>The Su… [+4213 chars]"
+    },
+    {
+        "source": {
+            "id": "business-insider",
+            "name": "Business Insider"
+        },
+        "author": "Morgan McFall-Johnsen",
+        "title": "Bird flu could jump to humans any day. A former surgeon general says it feels like 2020 again.",
+        "description": "H5N1 avian flu virus is spreading in cattle herds. Former surgeon general Jerome Adams, who served on Trump's COVID task force, is getting deja vu.",
+        "url": "https://www.businessinsider.com/bird-flu-cattle-outbreak-repeat-mistakes-former-surgeon-general-warning-2024-4",
+        "urlToImage": "https://i.insider.com/662a732023b29110d302fdd8?width=1200&format=jpeg",
+        "publishedAt": "2024-04-25T18:56:37Z",
+        "content": "Scientists collect organic material from a dead porpoise on the coast of the Atlantic Ocean, during a bird flu outbreak in São José do Norte, Brazil.Diego Vara/Reuters\r\n<ul><li>The H5N1 bird flu viru… [+6174 chars]"
+    },
+    {
+        "source": {
+            "id": "business-insider",
+            "name": "Business Insider"
+        },
+        "author": "Taylor Rains",
+        "title": "Rival airlines Emirates and Etihad are both flying their luxe Airbus A380s to the US. See how the superjumbos compare.",
+        "description": "Etihad's beloved A380 has returned to the US for the first time since Covid and its luxe cabins rival those of Emirates. Both sport a bar and shower.",
+        "url": "https://www.businessinsider.com/see-how-a380-cabins-compare-airlines-emirates-etihad-business-first-2024-4",
+        "urlToImage": "https://i.insider.com/662ae82a10dfcda40963a68c?width=1200&format=jpeg",
+        "publishedAt": "2024-04-28T09:07:01Z",
+        "content": "Etihad and Emirates offer two of the most luxurious flying options between New York and the UAE.Etihad, Stan Honda/AFP via Getty Images\r\n<ul><li>Etihad Airways and Emirates both fly luxe Airbus A380 … [+14376 chars]"
+    },
+    {
+        "source": {
+            "id": "the-verge",
+            "name": "The Verge"
+        },
+        "author": "Emma Roth",
+        "title": "Razer made a million dollars selling a mask with RGB, and the FTC is not pleased",
+        "description": "Razer will have to pay $1.1 million in refunds to customers who purchased its $100 Zephyr face mask, which it claimed was N95 compliant.",
+        "url": "https://www.theverge.com/2024/4/29/24144425/razer-zephyr-face-mask-covid-n95-ftc-settlement",
+        "urlToImage": "https://cdn.vox-cdn.com/thumbor/f0Cn7ugQakdb42ktOcYSTeMWF0Y=/0x0:2040x1360/1200x628/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/23132594/zephyrprofronthero.jpg",
+        "publishedAt": "2024-04-29T16:41:13Z",
+        "content": "Razer made a million dollars selling a mask with RGB, and the FTC is not pleased\r\nRazer made a million dollars selling a mask with RGB, and the FTC is not pleased\r\n / Razer allegedly misled customers… [+2582 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "NPR"
+        },
+        "author": "Selena Simmons-Duffin",
+        "title": "The CDC says maternal mortality rates in the U.S. got better, after a pandemic spike",
+        "description": "The maternal mortality rate in the U.S. in 2022 – while still high – went back to where it was before deaths surged during the height of the COVID-19 pandemic, according to the latest CDC report.",
+        "url": "https://www.npr.org/sections/health-shots/2024/05/02/1248563521/maternal-mortality-rates-2022-cdc",
+        "urlToImage": "https://media.npr.org/assets/img/2024/05/01/gettyimages-1990970748_wide-bb4668a15a12fb210e262e6e7056e4e3beb7288d.jpg?s=1400&c=100&f=jpeg",
+        "publishedAt": "2024-05-02T04:01:07Z",
+        "content": "After an alarming spike in 2021, maternal mortality numbers the next year went back down, according to a report released Thursday. CDC Director Mandy Cohen says the rates are still too high.\r\nRich Le… [+4164 chars]"
+    },
+    {
+        "source": {
+            "id": "bbc-news",
+            "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "Cigarette prices motivating more to give up - study",
+        "description": "The cost-of-living crisis is having an impact - but health concerns remain the top reason for quitting.",
+        "url": "https://www.bbc.co.uk/news/health-68875556",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/9F1B/production/_133213704_smoking-index-getty.jpg",
+        "publishedAt": "2024-04-23T01:13:28Z",
+        "content": "The rising price of cigarettes is motivating more people - one in four adults in England - to give up smoking, research suggests.\r\nIn a survey of nearly 6,000 people, health concerns were still the t… [+2378 chars]"
+    },
+    {
+        "source": {
+            "id": "bbc-news",
+            "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "Teacher admits murdering partner and burying body",
+        "description": "Fiona Beal sent messages to Nicholas Billingham's friends using his mobile phone, a trial hears.",
+        "url": "https://www.bbc.co.uk/news/uk-england-northamptonshire-68846713",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/7CCD/production/_133194913_moorestreet3.jpg",
+        "publishedAt": "2024-04-26T10:48:05Z",
+        "content": "A primary school teacher has admitted murdering her partner, tying his body up and burying him in the garden.\r\nThe partly-mummified remains of 42-year-old Nicholas Billingham were found in Northampto… [+2457 chars]"
+    }
+]

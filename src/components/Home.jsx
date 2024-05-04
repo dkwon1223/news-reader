@@ -3,6 +3,8 @@ import ArticleContainer from "./ArticleContainer";
 import { useState, useEffect } from "react";
 import Card from "./Card";
 import Loading from "./Loading";
+import DetailedView from "./DetailedView";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -39,6 +41,12 @@ const Home = () => {
   
   const recentNewsArticlesConverted = recentNewsArticles.map((article, index) => {
     return (
+      <Link
+      to={`/article`}
+      state={{
+        article: article
+      }}
+      >
         <Card
             key={article.title} 
             id={index}
@@ -47,6 +55,7 @@ const Home = () => {
             description={article.description}
             date={article.publishedAt}
         />
+      </Link>
     )
   });
 

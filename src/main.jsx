@@ -5,13 +5,13 @@ import App from "./App.jsx";
 import "./index.css";
 import ArticleCategory from "./components/ArticleCategory.jsx";
 import Loading from "./components/Loading.jsx";
+import DetailedView from "./components/DetailedView.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/loading" element={<Loading />} />
         <Route path="/sports" element={<ArticleCategory category="sports" />} />
         <Route
           path="/business"
@@ -22,6 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           element={<ArticleCategory category="technology" />}
         />
         <Route path="/health" element={<ArticleCategory category="health" />} />
+        <Route path="/article" element={<DetailedView />}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 
 const navigation = [
   { name: "Home" },
+  { name: "Trending" },
   { name: "Sports" },
   { name: "Business" },
   { name: "Technology" },
@@ -35,7 +36,7 @@ const Nav = () => {
                     src={AppIcon}
                     alt="Your Company"
                   />
-                  <h1 className="font-extrabold text-2xl">NewsReader</h1>
+                  <h1 className="font-extrabold text-sm sm:text-sm lg:text-2xl">NewsReader</h1>
                 </div>
               </div>
               <div className="relative z-0 flex flex-1 items-center justify-center px-2 sm:absolute sm:inset-0">
@@ -59,7 +60,7 @@ const Nav = () => {
                     />
                   </div>
                 </div>
-                <button className="ml-2 bg-indigo-600 rounded-lg w-28 font-bold text-white h-8">
+                <button className="ml-2 bg-indigo-600 rounded-lg w-28 font-bold text-white h-8 text-sm">
                   Find Stories
                 </button>
               </div>

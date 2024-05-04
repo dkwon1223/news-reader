@@ -33,8 +33,9 @@ const ArticleCategory = ({ category }) => {
   }, [category])
 
   useEffect(() => {
+    setLoading(true)
     setTimeout(() => {
-      setLoading(!loading)
+      setLoading(false)
     }, 1500)
   }, [category])
 

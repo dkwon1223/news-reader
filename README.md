@@ -1,8 +1,22 @@
-# React + Vite
+# NewsReader
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About
+This application aims to build a front end application using the [NewsAPI](https://newsapi.org/) to display an intuitive UI to users who can view different types of news articles and details about them.
 
-Currently, two official plugins are available:
+## Contributors
+- [David Kwon](https://github.com/dkwon1223)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+## Preview
+To Run Locally - Run `npm install` then `npm run dev` in the project root directory
+
+## Screenshots
+![Screenshot from 2024-05-03 22-59-04](https://github.com/dkwon1223/news-reader/assets/112133897/40fa1892-2c75-483a-8b0a-d9a27c47cbbd)
+
+## Future Directions
+- Finish implementing search feature functionality
+- Web scraping for the full article body content in detailed view
+

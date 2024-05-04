@@ -1,8 +1,8 @@
 import React from "react";
 import ArticleContainer from "./ArticleContainer";
 import { useState, useEffect } from "react";
-import { articles } from "../mockData";
 import Card from "./Card";
+import Loading from "./Loading";
 
 const Home = () => {
 
@@ -23,9 +23,8 @@ const Home = () => {
       const data = await response.json();
       const articles = data.articles
       const filteredArticles = articles.filter((article) => {
-        return article.content != "[Removed]"
+        return article.content != "[Removed]" && article.urlToImage != null
       })
-      console.log(filteredArticles);
       setRecentNewsArticles(filteredArticles);
     } catch(error) {
       console.log(Error, error);
@@ -33,7 +32,9 @@ const Home = () => {
   }
   
   useEffect(() => {
-    fetchRecentNews();
+    setTimeout(() => {
+      fetchRecentNews();
+    }, 1500)
   }, [])
   
   const recentNewsArticlesConverted = recentNewsArticles.map((article, index) => {
@@ -51,7 +52,7 @@ const Home = () => {
 
   return (
     <section className="h-full py-12">
-        <ArticleContainer title="Recent News" articles={recentNewsArticlesConverted} />
+        {recentNewsArticles.length > 0 ? <ArticleContainer title="Recent News" articles={recentNewsArticlesConverted} /> : <Loading />}
     </section>
   );
 };

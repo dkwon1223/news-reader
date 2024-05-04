@@ -7,7 +7,6 @@ import { NavLink } from "react-router-dom";
 
 const navigation = [
   { name: "Home" },
-  { name: "Trending" },
   { name: "Sports" },
   { name: "Business" },
   { name: "Technology" },
@@ -16,10 +15,6 @@ const navigation = [
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
-}
-
-function toggleCurrent(item) {
-  item.current = !item.current;
 }
 
 const Nav = () => {
@@ -85,8 +80,7 @@ const Nav = () => {
               {navigation.map((item) => (
                 <NavLink
                   key={item.name}
-                  to={`/${item.name.toLowerCase()}`}
-                  onClick={toggleCurrent(item)}
+                  to={item.name === "Home" ? "/" :`/${item.name.toLowerCase()}`}
                   className={classNames(
                     "text-gray-900 hover:bg-gray-100 hover:text-gray-900",
                     "inline-flex items-center rounded-md py-2 px-3 text-sm font-medium"
@@ -104,7 +98,7 @@ const Nav = () => {
               {navigation.map((item) => (
                 <NavLink
                   key={item.name}
-                  to={`/${item.name.toLowerCase()}`}
+                  to={item.name === "Home" ? "/" :`/${item.name.toLowerCase()}`}
                   className={classNames(
                     "text-gray-900 hover:bg-gray-50 hover:text-gray-900",
                     "block rounded-md py-2 px-3 text-base font-medium"

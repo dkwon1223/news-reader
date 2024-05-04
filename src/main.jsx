@@ -10,7 +10,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/trending" element={<ArticleCategory category="trending" />} />
         <Route path="/sports" element={<ArticleCategory category="sports" />} />
         <Route
           path="/business"

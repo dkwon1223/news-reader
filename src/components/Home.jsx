@@ -51,7 +51,7 @@ const Home = () => {
 
   return (
     <section className="h-full py-12">
-        <ArticleContainer title="Recent News" articles={recentNewsArticlesConverted} height="100" />
+        <ArticleContainer title="Recent News" articles={recentNewsArticlesConverted} />
     </section>
   );
 };

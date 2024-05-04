@@ -1,8 +1,9 @@
 import React from "react";
 
-const ArticleContainer = ({ title, articles, height }) => {
+const ArticleContainer = ({ title, articles }) => 
+  {
   return (
-    <section className={`flex flex-col items-center max-h-[${height}vh]`}>
+    <section className={`flex flex-col items-center`}>
       <h1 className="font-bold text-5xl text-indigo-600 mb-6">{title}</h1>
       <section
         id={`${title.replace(" ", "")}Container`}
